@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">week1</string>
+    <string name="app_name">My Application</string>
+    <string name="happy">행복</string>
+    <string name="excited">흥분</string>
+    <string name="neutral">평범</string>
+    <string name="sad">불안</string>
+    <string name="angry">화</string>
 </resources>

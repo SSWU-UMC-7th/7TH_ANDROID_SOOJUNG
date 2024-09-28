@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="당신이 선택한 감정우표는"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/selectedEmotionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내가 선택한 감정이 여기에 표시된다."
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:id="@+id/emotionImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>
