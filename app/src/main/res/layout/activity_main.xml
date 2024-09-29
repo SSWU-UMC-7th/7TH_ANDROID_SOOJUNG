@@ -1,95 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/background"
-        android:padding="16dp">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오늘 하루는 어땠나요?"
+        android:layout_marginTop="50dp"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:textFontWeight="30"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"/>
 
-        <!-- 질문 텍스트 -->
-        <TextView
-            android:id="@+id/questionText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="24dp"
-            android:text="오늘 하루는 어땠나요?"
-            android:textSize="20sp" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="감정 우표를 선택해주세요"
+        android:textSize="18dp"
+        android:textFontWeight="20"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"/>
 
-        <!-- 설명 텍스트 -->
-        <TextView
-            android:id="@+id/subText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/questionText"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="8dp"
-            android:text="감정우표를 선택해주세요"
-            android:textSize="16sp" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="선택한 감정우표를 기반으로 맞춤형 질문이 배달됩니다."
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"/>
 
-        <!-- 행복한 감정 아이콘 -->
-        <ImageView
-            android:id="@+id/happy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/subText"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="32dp"
-            android:contentDescription="Happy"
-            android:onClick="onEmotionClicked"
-            android:src="@drawable/happy" />
-
-        <!-- 들뜨고 흥분된 감정 아이콘 -->
-        <ImageView
-            android:id="@+id/excited"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/happy"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
-            android:contentDescription="Excited"
-            android:onClick="onEmotionClicked"
-            android:src="@drawable/excited" />
-
-        <!-- 평범한 감정 아이콘 -->
-        <ImageView
-            android:id="@+id/normal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/excited"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
-            android:contentDescription="Normal"
-            android:onClick="onEmotionClicked"
-            android:src="@drawable/normal" />
-
-        <!-- 불안한 감정 아이콘 -->
-        <ImageView
-            android:id="@+id/worried"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/normal"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
-            android:contentDescription="Worried"
-            android:onClick="onEmotionClicked"
-            android:src="@drawable/worried" />
-
-        <!-- 화난 감정 아이콘 -->
-        <ImageView
-            android:id="@+id/angry"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/worried"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
-            android:contentDescription="Angry"
-            android:onClick="onEmotionClicked"
-            android:src="@drawable/angry" />
-
-    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dp"/>
 </LinearLayout>

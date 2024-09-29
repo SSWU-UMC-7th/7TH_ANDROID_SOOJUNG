@@ -1,14 +1,14 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 android {
-    namespace = "com.example.week1"
+    namespace = "com.example.umc_practice"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.week1"
+        applicationId = "com.example.umc_practice"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -37,6 +37,8 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
+        viewBinding = true
+        dataBinding = true
         compose = true
     }
     composeOptions {
@@ -60,6 +62,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.recyclerview)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
