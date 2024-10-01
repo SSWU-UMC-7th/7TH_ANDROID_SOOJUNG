@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+<<<<<<< HEAD
     <style name="Theme.Umc_study" parent="android:Theme.Material.Light.NoActionBar" />
+=======
+    <style name="Theme.Umc_practice" parent="android:Theme.Material.Light.NoActionBar" />
+>>>>>>> main-jiyeong
 </resources>

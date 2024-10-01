@@ -19,6 +19,10 @@ dependencyResolutionManagement {
     }
 }
 
+<<<<<<< HEAD
 rootProject.name = "umc_study"
+=======
+rootProject.name = "umc_practice"
+>>>>>>> main-jiyeong
 include(":app")
  

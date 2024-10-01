@@ -1,3 +1,7 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">umc_study</string>
+=======
+    <string name="app_name">umc_practice</string>
+>>>>>>> main-jiyeong
 </resources>
