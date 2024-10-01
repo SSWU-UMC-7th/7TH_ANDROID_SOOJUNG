@@ -1,0 +1,33 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable angry
+drawable background
+drawable excited
+drawable happy
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable normal
+drawable worried
+id angry
+id emotionTextView
+id excited
+id happy
+id normal
+id questionText
+id subText
+id worried
+layout activity_main
+layout activity_next
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.Week1
+xml backup_rules
+xml data_extraction_rules

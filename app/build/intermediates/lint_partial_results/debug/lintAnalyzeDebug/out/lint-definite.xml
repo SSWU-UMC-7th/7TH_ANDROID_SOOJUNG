@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.6.0" type="incidents">
+
+    <incident
+        id="RedundantLabel"
+        severity="warning"
+        message="Redundant label can be removed">
+        <fix-attribute
+            description="Delete label"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="label"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="21"
+            column="13"
+            startOffset="757"
+            endLine="21"
+            endColumn="45"
+            endOffset="789"/>
+    </incident>
+
+    <incident
+        id="UselessParent"
+        severity="warning"
+        message="This `RelativeLayout` layout or its `LinearLayout` parent is unnecessary; transfer the `background` attribute to the other view">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="7"
+            column="6"
+            startOffset="243"
+            endLine="7"
+            endColumn="20"
+            endOffset="257"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;오늘 하루는 어땠나요?&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="20"
+            column="13"
+            startOffset="732"
+            endLine="20"
+            endColumn="40"
+            endOffset="759"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;감정우표를 선택해주세요&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="31"
+            column="13"
+            startOffset="1146"
+            endLine="31"
+            endColumn="40"
+            endOffset="1173"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Happy&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="42"
+            column="13"
+            startOffset="1559"
+            endLine="42"
+            endColumn="47"
+            endOffset="1593"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Excited&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="54"
+            column="13"
+            startOffset="2037"
+            endLine="54"
+            endColumn="49"
+            endOffset="2073"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Normal&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="66"
+            column="13"
+            startOffset="2516"
+            endLine="66"
+            endColumn="48"
+            endOffset="2551"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Worried&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="78"
+            column="13"
+            startOffset="2993"
+            endLine="78"
+            endColumn="49"
+            endOffset="3029"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Angry&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="90"
+            column="13"
+            startOffset="3470"
+            endLine="90"
+            endColumn="47"
+            endOffset="3504"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;선택된 감정이 표시됩니다&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_next.xml"
+            line="12"
+            column="9"
+            startOffset="423"
+            endLine="12"
+            endColumn="37"
+            endOffset="451"/>
+    </incident>
+
+    <incident
+        id="UselessParent"
+        severity="warning"
+        message="This `RelativeLayout` layout or its `LinearLayout` parent is unnecessary; transfer the `background` attribute to the other view">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-land/activity_main.xml"
+            line="7"
+            column="6"
+            startOffset="235"
+            endLine="7"
+            endColumn="20"
+            endOffset="249"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;오늘 하루는 어땠나요?&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-land/activity_main.xml"
+            line="20"
+            column="13"
+            startOffset="711"
+            endLine="20"
+            endColumn="40"
+            endOffset="738"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;감정우표를 선택해주세요&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-land/activity_main.xml"
+            line="31"
+            column="13"
+            startOffset="1114"
+            endLine="31"
+            endColumn="40"
+            endOffset="1141"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Happy&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-land/activity_main.xml"
+            line="42"
+            column="13"
+            startOffset="1516"
+            endLine="42"
+            endColumn="47"
+            endOffset="1550"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Excited&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-land/activity_main.xml"
+            line="54"
+            column="13"
+            startOffset="1982"
+            endLine="54"
+            endColumn="49"
+            endOffset="2018"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Normal&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-land/activity_main.xml"
+            line="66"
+            column="13"
+            startOffset="2449"
+            endLine="66"
+            endColumn="48"
+            endOffset="2484"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Worried&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-land/activity_main.xml"
+            line="78"
+            column="13"
+            startOffset="2914"
+            endLine="78"
+            endColumn="49"
+            endOffset="2950"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Angry&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-land/activity_main.xml"
+            line="90"
+            column="13"
+            startOffset="3379"
+            endLine="90"
+            endColumn="47"
+            endOffset="3413"/>
+    </incident>
+
+    <incident
+        id="Typos"
+        severity="warning"
+        message="Did you mean &quot;week!&quot; instead of &quot;week1&quot;?">
+        <fix-replace
+            description="Replace with &quot;week!&quot;"
+            oldString="week1"
+            replacement="week!"
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+                startOffset="40"
+                endOffset="45"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="2"
+            column="29"
+            startOffset="40"
+            endLine="2"
+            endColumn="29"
+            endOffset="44"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/week1/NextActivity.kt"
+            line="16"
+            column="32"
+            startOffset="486"
+            endLine="16"
+            endColumn="50"
+            endOffset="504"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 35"
+            oldString="34"
+            replacement="35"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="13"
+            column="9"
+            startOffset="255"
+            endLine="13"
+            endColumn="23"
+            endOffset="269"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.10.1 is available: 1.13.1">
+        <fix-replace
+            description="Change to 1.13.1"
+            family="Update versions"
+            oldString="1.10.1"
+            replacement="1.13.1"
+            priority="0"/>
+        <location
+            file="$HOME/AndroidStudioProjects/week1/gradle/libs.versions.toml"
+            line="4"
+            column="11"
+            startOffset="52"
+            endLine="4"
+            endColumn="19"
+            endOffset="60"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1">
+        <fix-replace
+            description="Change to 1.2.1"
+            family="Update versions"
+            oldString="1.1.5"
+            replacement="1.2.1"
+            priority="0"/>
+        <location
+            file="$HOME/AndroidStudioProjects/week1/gradle/libs.versions.toml"
+            line="6"
+            column="16"
+            startOffset="93"
+            endLine="6"
+            endColumn="23"
+            endOffset="100"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1">
+        <fix-replace
+            description="Change to 3.6.1"
+            family="Update versions"
+            oldString="3.5.1"
+            replacement="3.6.1"
+            priority="0"/>
+        <location
+            file="$HOME/AndroidStudioProjects/week1/gradle/libs.versions.toml"
+            line="7"
+            column="16"
+            startOffset="116"
+            endLine="7"
+            endColumn="23"
+            endOffset="123"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.6.1 is available: 2.8.6">
+        <fix-replace
+            description="Change to 2.8.6"
+            family="Update versions"
+            oldString="2.6.1"
+            replacement="2.8.6"
+            priority="0"/>
+        <location
+            file="$HOME/AndroidStudioProjects/week1/gradle/libs.versions.toml"
+            line="8"
+            column="23"
+            startOffset="146"
+            endLine="8"
+            endColumn="30"
+            endOffset="153"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.activity:activity-compose than 1.8.0 is available: 1.9.2">
+        <fix-replace
+            description="Change to 1.9.2"
+            family="Update versions"
+            oldString="1.8.0"
+            replacement="1.9.2"
+            priority="0"/>
+        <location
+            file="$HOME/AndroidStudioProjects/week1/gradle/libs.versions.toml"
+            line="9"
+            column="19"
+            startOffset="172"
+            endLine="9"
+            endColumn="26"
+            endOffset="179"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.compose:compose-bom than 2024.04.01 is available: 2024.09.02">
+        <fix-replace
+            description="Change to 2024.09.02"
+            family="Update versions"
+            oldString="2024.04.01"
+            replacement="2024.09.02"
+            priority="0"/>
+        <location
+            file="$HOME/AndroidStudioProjects/week1/gradle/libs.versions.toml"
+            line="10"
+            column="14"
+            startOffset="193"
+            endLine="10"
+            endColumn="26"
+            endOffset="205"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.0">
+        <fix-replace
+            description="Change to 1.7.0"
+            family="Update versions"
+            oldString="1.6.1"
+            replacement="1.7.0"
+            priority="0"/>
+        <location
+            file="$HOME/AndroidStudioProjects/week1/gradle/libs.versions.toml"
+            line="11"
+            column="13"
+            startOffset="218"
+            endLine="11"
+            endColumn="20"
+            endOffset="225"/>
+    </incident>
+
+    <incident
+        id="AndroidGradlePluginVersion"
+        severity="warning"
+        message="A newer version of com.android.application than 8.6.0 is available: 8.6.1">
+        <fix-replace
+            description="Change to 8.6.1"
+            family="Update versions"
+            robot="true"
+            independent="true"
+            oldString="8.6.0"
+            replacement="8.6.1"
+            priority="0"/>
+        <location
+            file="$HOME/AndroidStudioProjects/week1/gradle/libs.versions.toml"
+            line="2"
+            column="7"
+            startOffset="17"
+            endLine="2"
+            endColumn="14"
+            endOffset="24"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/angry.png` in densityless folder">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/angry.png"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/background.jpeg` in densityless folder">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/background.jpeg"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/excited.png` in densityless folder">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/excited.png"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/happy.png` in densityless folder">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/happy.png"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/normal.png` in densityless folder">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/normal.png"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/worried.png` in densityless folder">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/worried.png"/>
+    </incident>
+
+</incidents>

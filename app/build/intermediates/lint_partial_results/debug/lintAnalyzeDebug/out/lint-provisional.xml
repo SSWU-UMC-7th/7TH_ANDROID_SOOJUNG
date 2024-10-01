@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.6.0" type="conditional_incidents">
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 31">
+        <fix-replace
+            description="Delete tools:targetApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+                startOffset="569"
+                endOffset="589"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="14"
+            column="9"
+            startOffset="569"
+            endLine="14"
+            endColumn="29"
+            endOffset="589"/>
+        <map>
+            <condition minGE="ffffffffc0000000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="UsingOnClickInXml"
+        severity="warning"
+        message="Use databinding or explicit wiring of click listener in code">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="43"
+            column="13"
+            startOffset="1607"
+            endLine="43"
+            endColumn="47"
+            endOffset="1641"/>
+        <map>
+            <condition minLT="ffffffffffc00000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="UsingOnClickInXml"
+        severity="warning"
+        message="Use databinding or explicit wiring of click listener in code">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="55"
+            column="13"
+            startOffset="2087"
+            endLine="55"
+            endColumn="47"
+            endOffset="2121"/>
+        <map>
+            <condition minLT="ffffffffffc00000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="UsingOnClickInXml"
+        severity="warning"
+        message="Use databinding or explicit wiring of click listener in code">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="67"
+            column="13"
+            startOffset="2565"
+            endLine="67"
+            endColumn="47"
+            endOffset="2599"/>
+        <map>
+            <condition minLT="ffffffffffc00000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="UsingOnClickInXml"
+        severity="warning"
+        message="Use databinding or explicit wiring of click listener in code">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="79"
+            column="13"
+            startOffset="3043"
+            endLine="79"
+            endColumn="47"
+            endOffset="3077"/>
+        <map>
+            <condition minLT="ffffffffffc00000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="UsingOnClickInXml"
+        severity="warning"
+        message="Use databinding or explicit wiring of click listener in code">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="91"
+            column="13"
+            startOffset="3518"
+            endLine="91"
+            endColumn="47"
+            endOffset="3552"/>
+        <map>
+            <condition minLT="ffffffffffc00000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="UsingOnClickInXml"
+        severity="warning"
+        message="Use databinding or explicit wiring of click listener in code">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-land/activity_main.xml"
+            line="43"
+            column="13"
+            startOffset="1563"
+            endLine="43"
+            endColumn="47"
+            endOffset="1597"/>
+        <map>
+            <condition minLT="ffffffffffc00000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="UsingOnClickInXml"
+        severity="warning"
+        message="Use databinding or explicit wiring of click listener in code">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-land/activity_main.xml"
+            line="55"
+            column="13"
+            startOffset="2031"
+            endLine="55"
+            endColumn="47"
+            endOffset="2065"/>
+        <map>
+            <condition minLT="ffffffffffc00000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="UsingOnClickInXml"
+        severity="warning"
+        message="Use databinding or explicit wiring of click listener in code">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-land/activity_main.xml"
+            line="67"
+            column="13"
+            startOffset="2497"
+            endLine="67"
+            endColumn="47"
+            endOffset="2531"/>
+        <map>
+            <condition minLT="ffffffffffc00000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="UsingOnClickInXml"
+        severity="warning"
+        message="Use databinding or explicit wiring of click listener in code">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-land/activity_main.xml"
+            line="79"
+            column="13"
+            startOffset="2963"
+            endLine="79"
+            endColumn="47"
+            endOffset="2997"/>
+        <map>
+            <condition minLT="ffffffffffc00000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="UsingOnClickInXml"
+        severity="warning"
+        message="Use databinding or explicit wiring of click listener in code">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout-land/activity_main.xml"
+            line="91"
+            column="13"
+            startOffset="3426"
+            endLine="91"
+            endColumn="47"
+            endOffset="3460"/>
+        <map>
+            <condition minLT="ffffffffffc00000"/>
+        </map>
+    </incident>
+
+</incidents>

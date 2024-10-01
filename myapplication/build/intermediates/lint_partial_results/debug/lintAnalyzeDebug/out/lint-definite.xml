@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.6.0" type="incidents">
+
+    <incident
+        id="RedundantLabel"
+        severity="warning"
+        message="Redundant label can be removed">
+        <fix-attribute
+            description="Delete label"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="label"/>
+        <location
+            file="${:myapplication*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="14"
+            column="13"
+            startOffset="499"
+            endLine="14"
+            endColumn="45"
+            endOffset="531"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 35"
+            oldString="34"
+            replacement="35"
+            priority="0"/>
+        <location
+            file="${:myapplication*projectDir}/build.gradle.kts"
+            line="13"
+            column="9"
+            startOffset="271"
+            endLine="13"
+            endColumn="23"
+            endOffset="285"/>
+    </incident>
+
+</incidents>
