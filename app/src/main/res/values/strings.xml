@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">umc_study_week2</string>
+
+
+    <!-- Splash 화면용 문자열 추가 -->
+    <string name="splash_logo">Welcome to MyApp</string> <!-- 원하는 텍스트로 변경 가능 -->
+
+</resources>
