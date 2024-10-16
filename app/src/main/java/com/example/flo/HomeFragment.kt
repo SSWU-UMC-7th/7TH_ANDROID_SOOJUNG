@@ -1,6 +1,8 @@
 package com.example.flo
 
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -10,7 +12,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager2.widget.ViewPager2
 import com.example.flo.databinding.FragmentHomeBinding
 import com.google.gson.Gson
+import me.relex.circleindicator.CircleIndicator3
 import java.util.ArrayList
+import java.util.Timer
+import kotlin.concurrent.scheduleAtFixedRate
 
 class HomeFragment : Fragment() {
 
@@ -18,6 +23,9 @@ class HomeFragment : Fragment() {
     private var albumDatas = ArrayList<Album>()
 
     private lateinit var songDB: SongDatabase
+
+    private val timer = Timer()
+    private val handler = Handler(Looper.getMainLooper())
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -56,13 +64,40 @@ class HomeFragment : Fragment() {
         // 레이아웃 매니저 설정
         binding.homeTodayMusicAlbumRv.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
 
+        val mainBannerAdapter = MainBannerVPAdapter(this)
+        binding.homeMainBannerVp.adapter = mainBannerAdapter
+
+        // CircleIndicator 설정
+        val indicator: CircleIndicator3 = binding.viewPagerIndicator
+        indicator.setViewPager(binding.homeMainBannerVp)
+        mainBannerAdapter.registerAdapterDataObserver(indicator.adapterDataObserver)
+
+        // 자동슬라이드 함수
+        startAutoSlide(mainBannerAdapter)
+
+
         val bannerAdapter = BannerVPAdapter(this)
         bannerAdapter.addFragment(BannerFragment(R.drawable.img_home_viewpager_exp))
         bannerAdapter.addFragment(BannerFragment(R.drawable.img_home_viewpager_exp2))
         binding.homeBannerVp.adapter = bannerAdapter
         binding.homeBannerVp.orientation = ViewPager2.ORIENTATION_HORIZONTAL
 
+
         return binding.root
+    }
+
+    private fun startAutoSlide(adpater: MainBannerVPAdapter) {
+        // 일정 간격으로 슬라이드 변경 (3초마다)
+        timer.scheduleAtFixedRate(3000, 3000) {
+            handler.post {
+                val nextItem = binding.homeMainBannerVp.currentItem + 1
+                if (nextItem < adpater.itemCount) {
+                    binding.homeMainBannerVp.currentItem = nextItem
+                } else {
+                    binding.homeMainBannerVp.currentItem = 0 // 마지막 페이지에서 첫 페이지로 순환
+                }
+            }
+        }
     }
 
     private fun changeAlbumFragment(album: Album) {
