@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.umc_practice_2"
+    namespace = "com.example.umc_3"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.umc_practice_2"
+        applicationId = "com.example.umc_3"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -38,6 +38,7 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = true // 여기에 ViewBinding 추가
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
@@ -59,6 +60,8 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.appcompat)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -66,8 +69,4 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation("androidx.coordinatorlayout:coordinatorlayout:1.2.0")
-    // 최신 material 디자인 라이브러리 사용
-    implementation ("com.google.android.material:material:1.9.0")
 }
-

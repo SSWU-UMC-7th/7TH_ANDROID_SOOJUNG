@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "umc_practice_2"
+rootProject.name = "umc_3"
 include(":app")
