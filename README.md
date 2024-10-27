@@ -9,6 +9,6 @@
 | 박주연 | 나현주 | 심지영 | 천예린 |
 |:---:|:---:|:---:|:---:|
 | <img src="" width="300" height="230"> | <img src="" width="300" height="230"> | <img src="" width="300" height="230"> | <img src="" width="300" height="230"> |
-| [@Zuyeonn](https://github.com/Zuyeonn) | [@Hongji03](https://github.com/Hongji03) | [@Simmee02](https://github.com/Simmee02) | [@yerinchun](https://github.com/yerinchun) |
+| [@Zuyeonn](https://github.com/Zuyeonn) | [@HyeonJooooo](https://github.com/HyeonJooooo) | [@Simmee02](https://github.com/Simmee02) | [@yerinchun](https://github.com/yerinchun) |
 
 <br/> 
